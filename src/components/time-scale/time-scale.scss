@@ -1,0 +1,17 @@
+$half-hour-height: 42px;
+
+$slot-width: 46px;
+
+.slot{
+  height: 42px;
+  margin-right: 5px;
+  width: $slot-width;
+  p{
+    color: gray;
+    position: relative;
+    font-family: sans-serif;
+    margin: 0px;
+    font-weight: 600;
+    top: -8px;
+  }
+}

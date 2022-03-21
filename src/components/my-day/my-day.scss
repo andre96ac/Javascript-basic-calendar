@@ -1,0 +1,28 @@
+$half-hour-height: 40px;
+
+$day-width: 13.5vw;
+$day-min-width: 160px;
+
+.main-colum{
+  width: $day-width;
+  min-width: $day-min-width;
+  position: relative;
+  div.slot{
+    height: $half-hour-height;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+
+    &:hover{
+      background-color: #ff6cda4f;
+      border-color: lightgray;
+      cursor: pointer;
+    }
+  }
+  
+  
+  my-task{
+    position: absolute;
+    width: 98%;
+  }
+}

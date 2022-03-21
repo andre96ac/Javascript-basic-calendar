@@ -1,0 +1,26 @@
+
+$day-width: 13.5vw;
+$day-min-width: 160px;
+$offset-before: 51px;
+
+:host {
+  display: flex;
+
+
+  .space-empty{
+    width: $offset-before;
+  }
+
+  .slot{
+    width: $day-width;
+    min-width: $day-min-width;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: cornflowerblue;
+    
+    &.first{
+      margin-left: $offset-before;
+    }
+  }
+}
