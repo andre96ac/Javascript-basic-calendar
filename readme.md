@@ -9,7 +9,6 @@ Simple implementation of a graphic calendar, created with Stencil Js
 <br>
 
 ## Vanilla Js
-<hr>
 
 ### Installation
 
@@ -74,7 +73,6 @@ myCalendar.addEventListener('requestChangeDates', console.log) //ev.detail => vo
 <br>
 
 ## Angular
-<hr>
 
 
 ###### Not tested yet

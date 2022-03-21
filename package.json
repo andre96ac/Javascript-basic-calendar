@@ -12,7 +12,7 @@
   "unpkg": "dist/my-calendar/my-calendar.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "https://github.com/andre96ac/Javascript-basic-calendar.git"
   },
   "files": [
     "dist/",

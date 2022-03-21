@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, EventEmitter, Event } from '@stencil/core';
+import { Component,  h, Prop, EventEmitter, Event } from '@stencil/core';
 import { SLOT_HEIGTH } from '../../utils/constraits';
 import { DateUtils } from '../../utils/dateUtils';
 import { MyTaskModel } from '../../utils/models/myTaskModel';
