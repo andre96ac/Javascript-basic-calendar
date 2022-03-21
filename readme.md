@@ -12,11 +12,12 @@ Simple implementation of a graphic calendar, created with Stencil Js
 
 ### Installation
 
+    npm i javascript-basic-calendar
+
 
 ### Use
 
-
-### Passing tasks
+###### Html:
 ```html
 <body>
     <my-calendar></my-calendar>
@@ -24,7 +25,30 @@ Simple implementation of a graphic calendar, created with Stencil Js
 ```
 
 
+
+###### index.ts
 ```typescript
+
+//config:
+import { defineCustomElements } from './node_modules/javascript-basic-calendar/loader/index.js'
+defineCustomElements();
+
+
+//get reference:
+const myCalendarReference = document.querySelector('my-calendar');
+
+
+```
+
+
+
+### Passing tasks
+
+
+
+```typescript
+import { MyTaskModel } from './node_modules/javascript-basic-calendar/dist/types/utils/models/myTaskModel.js';
+
 const tasks: MyTaskModel[] = [
     {
         colorCode: '#6AFFC0',
@@ -45,8 +69,7 @@ const tasks: MyTaskModel[] = [
     
 ]
 
-const myCalendar = document.querySelector('my-calendar');
-myCalendar.inputTasks = tasks
+myCalendarReference.inputTasks = tasks
 
 ```
 
@@ -58,11 +81,10 @@ Events Availables:
 - requestChangeDates => Fired when user click on the topbar (days bar)
 
 ```Typescript
-const myCalendar = document.querySelector('my-calendar');
 
-myCalendar.addEventListener('requestEditTask', () => console.log(ev.detail)) //ev.detail => clicked task id, as you passed in the array (dlfkslfs09s8fsoidks9f0s)
-myCalendar.addEventListener('requestAddTask', console.log) //ev.detail => clicked slot date and time
-myCalendar.addEventListener('requestChangeDates', console.log) //ev.detail => void
+myCalendarReference.addEventListener('requestEditTask', (ev) => console.log(ev.detail)) //ev.detail => clicked task id, as you passed in the array (dlfkslfs09s8fsoidks9f0s)
+myCalendarReference.addEventListener('requestAddTask', (ev) => console.log(ev.detail)) //ev.detail => clicked slot date and time
+myCalendarReference.addEventListener('requestChangeDates', (ev) => console.log(ev.detail)) //ev.detail => void
 
 ```
 
